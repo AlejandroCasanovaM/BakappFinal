@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.casanova.alejandro.bakappfinal.calculadora"
+    android:background="@mipmap/pug">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="113dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRaza"
+        app:srcCompat="@mipmap/huesosletras" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="113dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerRaza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@mipmap/huesosletras" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerActividad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoCaja"
+        app:srcCompat="@mipmap/huesosletras" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="113dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerActividad"
+        app:srcCompat="@mipmap/huesosletras" />
+
+    <EditText
+        android:id="@+id/pesoCaja"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/spinnerActividad"
+        android:layout_width="314dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Spinner
+        android:id="@+id/spinnerRaza"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/calcularAhoraBoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="30dp"
+        android:text="Calcular ahora!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerEdad" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="89dp"
+        android:text="Raza:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Peso:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRaza" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Actividad:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoCaja" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Edad:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerActividad" />
+
+    <Spinner
+        android:id="@+id/spinnerEdad"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/spinnerPeso"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerActividad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pesoCaja"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRaza" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

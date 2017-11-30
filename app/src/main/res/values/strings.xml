@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BakappFinal</string>
+    <string name="bot_n">Botón</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+</resources>

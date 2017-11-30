@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.casanova.alejandro.bakappfinal.productosLista"
+    android:background ="@mipmap/fondoperritu"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:text="Bolsa chica presentaciones de 400, 500 y 600 gramos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/bakfood7" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="161dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Bolsa grande en presentaciones de 700, 800, 900 y 1000 gramos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="172dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@mipmap/bakalimento" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="84dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginStart="150dp"
+        android:text="PREMIOS"
+        android:textAppearance="@android:style/TextAppearance.Holo.Widget.TextView.PopupMenu"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                android:visibility="visible"
+                app:srcCompat="@mipmap/higadores"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="337dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                android:visibility="visible"
+                app:srcCompat="@mipmap/huesocarne"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="358dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                app:srcCompat="@mipmap/corazonres"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="438dp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                app:srcCompat="@mipmap/galletassardina"
+                tools:layout_editor_absoluteX="183dp"
+                tools:layout_editor_absoluteY="468dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_margin="30dp"
+                app:srcCompat="@mipmap/galletasatun"
+                tools:layout_editor_absoluteX="287dp"
+                tools:layout_editor_absoluteY="457dp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
